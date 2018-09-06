@@ -18,7 +18,7 @@ from __future__ import print_function
 
 import tensorflow as tf
 
-import model_base
+from tutorials.image.cifar10_estimator import model_base
 
 
 class ResNetCifar10(model_base.ResNet):

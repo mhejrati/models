@@ -38,10 +38,10 @@ After running the command above, you should see the following files in the
 Run the training on CPU only. After training, it runs the evaluation.
 
 ```
-python cifar10_main.py --data-dir=${PWD}/cifar-10-data \
-                       --job-dir=/tmp/cifar10 \
-                       --num-gpus=0 \
-                       --train-steps=1000
+python -m tutorials.image.cifar10_estimator.cifar10_main --data-dir=${PWD}/cifar-10-data \
+                                                         --job-dir=/tmp/cifar10 \
+                                                         --num-gpus=0 \
+                                                         --train-steps=1000
 ```
 
 Run the model on 2 GPUs using CPU as parameter server. After training, it runs
